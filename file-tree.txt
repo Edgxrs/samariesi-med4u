@@ -1,0 +1,146 @@
+./
+├── VSCODE-SETUP.md
+├── file-tree.txt
+├── fonts/
+│   ├── Aptos-Black.woff
+│   ├── Aptos-Black.woff2
+│   ├── Aptos-BlackItalic.woff
+│   ├── Aptos-BlackItalic.woff2
+│   ├── Aptos-Bold.woff
+│   ├── Aptos-Bold.woff2
+│   ├── Aptos-BoldItalic.woff
+│   ├── Aptos-BoldItalic.woff2
+│   ├── Aptos-ExtraBold.woff
+│   ├── Aptos-ExtraBold.woff2
+│   ├── Aptos-ExtraBoldItalic.woff
+│   ├── Aptos-ExtraBoldItalic.woff2
+│   ├── Aptos-Italic.woff
+│   ├── Aptos-Italic.woff2
+│   ├── Aptos-Light.woff
+│   ├── Aptos-Light.woff2
+│   ├── Aptos-LightItalic.woff
+│   ├── Aptos-LightItalic.woff2
+│   ├── Aptos-Narrow-Bold-Italic.woff
+│   ├── Aptos-Narrow-Bold-Italic.woff2
+│   ├── Aptos-Narrow-Bold.woff
+│   ├── Aptos-Narrow-Bold.woff2
+│   ├── Aptos-Narrow-Italic.woff
+│   ├── Aptos-Narrow-Italic.woff2
+│   ├── Aptos-Narrow.woff
+│   ├── Aptos-Narrow.woff2
+│   ├── Aptos-SemiBold.woff
+│   ├── Aptos-SemiBold.woff2
+│   ├── Aptos-SemiBoldItalic.woff
+│   ├── Aptos-SemiBoldItalic.woff2
+│   ├── Aptos.woff
+│   ├── Aptos.woff2
+│   ├── AptosDisplay-Bold.woff
+│   ├── AptosDisplay-Bold.woff2
+│   ├── AptosDisplay-BoldItalic.woff
+│   ├── AptosDisplay-BoldItalic.woff2
+│   ├── AptosDisplay-Italic.woff
+│   ├── AptosDisplay-Italic.woff2
+│   ├── AptosDisplay.woff
+│   ├── AptosDisplay.woff2
+│   ├── AptosMono-Bold.woff
+│   ├── AptosMono-Bold.woff2
+│   ├── AptosMono-BoldItalic.woff
+│   ├── AptosMono-BoldItalic.woff2
+│   ├── AptosMono-Italic.woff
+│   ├── AptosMono-Italic.woff2
+│   ├── AptosMono.woff
+│   ├── AptosMono.woff2
+│   ├── AptosSerif-Bold.woff
+│   ├── AptosSerif-Bold.woff2
+│   ├── AptosSerif-BoldItalic.woff
+│   ├── AptosSerif-BoldItalic.woff2
+│   ├── AptosSerif-Italic.woff
+│   ├── AptosSerif-Italic.woff2
+│   ├── AptosSerif-Regular.woff
+│   ├── AptosSerif-Regular.woff2
+│   ├── EBGaramond-Bold.woff
+│   ├── EBGaramond-Bold.woff2
+│   ├── EBGaramond-BoldItalic.woff
+│   ├── EBGaramond-BoldItalic.woff2
+│   ├── EBGaramond-ExtraBold.woff
+│   ├── EBGaramond-ExtraBold.woff2
+│   ├── EBGaramond-ExtraBoldItalic.woff
+│   ├── EBGaramond-ExtraBoldItalic.woff2
+│   ├── EBGaramond-Italic.woff
+│   ├── EBGaramond-Italic.woff2
+│   ├── EBGaramond-Medium.woff
+│   ├── EBGaramond-Medium.woff2
+│   ├── EBGaramond-MediumItalic.woff
+│   ├── EBGaramond-MediumItalic.woff2
+│   ├── EBGaramond-Regular.woff
+│   ├── EBGaramond-Regular.woff2
+│   ├── EBGaramond-SemiBold.woff
+│   ├── EBGaramond-SemiBold.woff2
+│   ├── EBGaramond-SemiBoldItalic.woff
+│   └── EBGaramond-SemiBoldItalic.woff2
+├── footer.php
+├── functions.php
+├── header.php
+├── imgs/
+│   ├── 32705f52b4dd386ee1f4c1f3648a57aa.png
+│   ├── 33824120_l.jpg
+│   ├── ChatGPT Image Jul 15, 2025 at 01_57_09 PM.png
+│   ├── ChatGPT Image Jul 15, 2025 at 01_57_11 PM.png
+│   ├── ChatGPT Image Jul 15, 2025 at 01_57_13 PM.png
+│   ├── Hospice-iPad-Male-Nurse-Blog.jpg
+│   ├── Nozimite2.png
+│   ├── ProductMatch.png
+│   ├── Screenshot 2023-12-17 at 20.45.31.png
+│   ├── Unknown-2
+│   ├── compar-logo-white.png
+│   ├── compar-logo.png
+│   ├── compar.png
+│   ├── default-avatar.svg
+│   ├── donations.png
+│   ├── familynurse.jpg
+│   ├── hospiss_pag.png
+│   ├── icons8-facebook-24 (1).png
+│   ├── icons8-instagram-24.png
+│   ├── icons8-linkedin-24.png
+│   ├── icons8-tiktok-24.png
+│   ├── logo-4.svg
+│   ├── logo.svg
+│   ├── nozimite.png
+│   ├── pexels-alan-cabello-2806517.jpg
+│   ├── pexels-alina-vilchenko-5339949.jpg
+│   ├── pexels-andrea-piacquadio-3775534.jpg
+│   ├── pexels-anna-shvets-4971237.jpg
+│   ├── pexels-kinhotrong-3132837.jpg
+│   ├── pexels-laura-tancredi-7065308.jpg
+│   ├── pexels-min-an-991199.jpg
+│   ├── pexels-summer-choate-12944554.jpg
+│   ├── pexels-summer-choate-12944556.jpg
+│   ├── pilnais-logo.png
+│   ├── riga-hero.jpg
+│   ├── rudens.jpg
+│   ├── samariesi-logo.png
+│   ├── samariesi-logo1.png
+│   └── vidzeme-hero.jpg
+├── includes/
+│   ├── config.php
+│   ├── footer.php
+│   └── header.php
+├── index.php
+├── js/
+│   ├── alert.js
+│   ├── mobile-menu.js
+│   └── script.js
+├── page-atsauksmes.php
+├── page-brivpratigo-darbs.php
+├── page-komanda-riga.php
+├── page-komanda-vidzeme.php
+├── page-komanda.php
+├── page-pakalpojums.php
+├── page-vakances.php
+├── page-ziedojumi.php
+├── replit.md
+├── style.css
+├── team-test.html
+├── template-cards/
+│   └── contact-card.php
+└── wp-config.php

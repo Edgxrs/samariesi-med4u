@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Test - Samariesi Med4U</title>
+    <style>
+      :root {
+        --primary-red: #a90230;
+        --primary-white: #ffffff;
+        --transition-fast: 0.3s ease;
+        --transition-medium: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      .team-intro-header {
+        background-color: var(--primary-white);
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .team-organization {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+      }
+
+      .subteam-container {
+        position: relative;
+        flex: 1;
+        min-height: calc(100vh / 3);
+        display: flex;
+        flex-direction: column;
+        transition: all var(--transition-medium);
+      }
+
+      .subteam-header {
+        width: 100%;
+        background: var(--primary-red);
+        color: var(--primary-white);
+        border: none;
+        padding: 3rem 2rem;
+        font-size: 2.5rem;
+        text-align: center;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all var(--transition-fast);
+        font-weight: 700;
+        flex: 1;
+        position: relative;
+        z-index: 2;
+      }
+
+      .subteam-header:hover {
+        background: #8b0228;
+        box-shadow: 0 8px 32px rgba(169, 2, 48, 0.4);
+        transform: translateY(-2px);
+      }
+
+      .subteam-header h3 {
+        margin: 0;
+        font-size: inherit;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .subteam-content {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        background: var(--primary-white);
+        position: relative;
+        z-index: 1;
+        border-left: 4px solid var(--primary-red);
+        border-right: 4px solid var(--primary-red);
+      }
+
+      .subteam-content.expanded {
+        max-height: 800px;
+        padding: 3rem 2rem;
+        box-shadow: inset 0 0 20px rgba(169, 2, 48, 0.1);
+      }
+
+      .team-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .team-card {
+        background: white;
+        border-radius: 8px;
+        padding: 2rem;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      /* Different colors for each team */
+      .subteam-container:nth-child(1) .subteam-header {
+        background: var(--primary-red);
+      }
+
+      .subteam-container:nth-child(1) .subteam-header:hover {
+        background: #8b0228;
+      }
+
+      .subteam-container:nth-child(2) .subteam-header {
+        background: #b91c47;
+      }
+
+      .subteam-container:nth-child(2) .subteam-header:hover {
+        background: #9a1238;
+      }
+
+      .subteam-container:nth-child(3) .subteam-header {
+        background: #c9355c;
+      }
+
+      .subteam-container:nth-child(3) .subteam-header:hover {
+        background: #a8244a;
+      }
+
+      @media (max-width: 768px) {
+        .subteam-header {
+          padding: 2rem 1rem;
+          font-size: 1.8rem;
+        }
+
+        .subteam-content.expanded {
+          padding: 2rem 1rem;
+        }
+
+        .team-cards {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="team-intro-header">
+      <h1>Team Organization Test</h1>
+      <p>Click on any team bar to test the expand/collapse functionality</p>
+    </section>
+
+    <section class="team-organization">
+      <div class="subteam-container">
+        <button class="subteam-header" aria-expanded="false">
+          <h3>Team 1</h3>
+        </button>
+        <div class="subteam-content">
+          <div class="team-cards">
+            <div class="team-card">
+              <h4>Dr. Anna Bērziņa</h4>
+              <p>Paliatīvās aprūpes ārste</p>
+              <p>Speciāliste sāpju terapijā un simptomu kontrolē</p>
+            </div>
+            <div class="team-card">
+              <h4>Māra Liepiņa</h4>
+              <p>Galvenā māsa</p>
+              <p>Atbildīga par māsu darba koordināciju un kvalitāti</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="subteam-container">
+        <button class="subteam-header" aria-expanded="false">
+          <h3>Team 2</h3>
+        </button>
+        <div class="subteam-content">
+          <div class="team-cards">
+            <div class="team-card">
+              <h4>Jānis Kalniņš</h4>
+              <p>Sociālais darbinieks</p>
+              <p>Palīdz ģimenēm risināt praktiskos jautājumus</p>
+            </div>
+            <div class="team-card">
+              <h4>Dr. Pēteris Jansons</h4>
+              <p>Psihologs</p>
+              <p>Psiholoģiskais atbalsts pacientiem un ģimenēm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="subteam-container">
+        <button class="subteam-header" aria-expanded="false">
+          <h3>Team 3</h3>
+        </button>
+        <div class="subteam-content">
+          <div class="team-cards">
+            <div class="team-card">
+              <h4>Liga Liepiņa</h4>
+              <p>Garīdznieks</p>
+              <p>Garīgais padomnieks un atbalsts ticības jautājumos</p>
+            </div>
+            <div class="team-card">
+              <h4>Roberts Ziediņš</h4>
+              <p>Komandas koordinators</p>
+              <p>Organizē un koordinē visas aprūpes aktivitātes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Toggle subteam function for collapsible team sections
+      function toggleSubteam(button) {
+        console.log("toggleSubteam called", button);
+
+        if (!button) {
+          console.error("No button provided to toggleSubteam");
+          return;
+        }
+
+        const content = button.nextElementSibling;
+        const container = button.parentElement;
+
+        if (!content) {
+          console.error("No content found next to button");
+          return;
+        }
+
+        if (!container) {
+          console.error("No container found for button");
+          return;
+        }
+
+        const allContainers = document.querySelectorAll(".subteam-container");
+        const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+        console.log(
+          "Current state - isExpanded:",
+          isExpanded,
+          "content classes:",
+          content.classList.toString()
+        );
+
+        // Close all other expanded sections first
+        allContainers.forEach((otherContainer) => {
+          if (otherContainer !== container) {
+            const otherButton = otherContainer.querySelector(".subteam-header");
+            const otherContent =
+              otherContainer.querySelector(".subteam-content");
+            if (otherButton && otherContent) {
+              otherButton.setAttribute("aria-expanded", "false");
+              otherContent.classList.remove("expanded");
+            }
+          }
+        });
+
+        // Toggle the current section
+        button.setAttribute("aria-expanded", !isExpanded);
+
+        if (isExpanded) {
+          // Collapse
+          content.classList.remove("expanded");
+          console.log(
+            "Collapsed - content classes:",
+            content.classList.toString()
+          );
+        } else {
+          // Expand
+          content.classList.add("expanded");
+          console.log(
+            "Expanded - content classes:",
+            content.classList.toString()
+          );
+
+          // Smooth scroll to show the expanded content
+          setTimeout(() => {
+            if (content.scrollIntoView) {
+              content.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+              });
+            }
+          }, 100);
+        }
+      }
+
+      // Initialize team functionality when DOM is ready
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("DOM loaded, initializing team functionality");
+
+        // Add click event listeners to subteam headers
+        const subteamHeaders = document.querySelectorAll(".subteam-header");
+        console.log("Found", subteamHeaders.length, "subteam headers");
+
+        subteamHeaders.forEach((header, index) => {
+          console.log("Adding click listener to header", index);
+          header.addEventListener("click", function () {
+            console.log("Header clicked:", index);
+            toggleSubteam(this);
+          });
+        });
+
+        console.log("Team functionality initialized successfully");
+      });
+    </script>
+  </body>
+</html>
